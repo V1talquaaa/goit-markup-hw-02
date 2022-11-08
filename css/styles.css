@@ -1,22 +1,3 @@
-/*
-header
-header background - ffffff
-logo - color: 2196F3, 000000
-text -  212121, 2196F3
-
-Hero
-background - 2F303A,
-FFFFFF+2196F3
-
-Main
-h1,h2,h3,h4 - 212121
-p - 757575
-
-footer
-FFFFFF
-
-*/
-
 :root {
     --main-color: #212121;
     --secondary-color: #2196f3;
@@ -26,6 +7,7 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+/* Utilization classes */
 .link {
     text-decoration: none;
 }
@@ -33,6 +15,10 @@ body {
 .list {
     list-style: none;
 }
+
+/* Utilization classes */
+
+/* header */
 
 .logo {
     font-family: raleway, sans-serif;
@@ -46,7 +32,6 @@ body {
     color: var(--secondary-color)
 }
 
-
 .nav-menu {
     
     font-weight: 500;
@@ -57,8 +42,16 @@ body {
 }
 
 .nav-menu :hover,
-.nav-menu :focus {
-    color: var(--secondary-color)
+.nav-menu :focus,
+.nav-email:hover,
+.nav-email:focus,
+.nav-telephone:hover,
+.nav-telephone:focus {  
+    color: var(--secondary-color);
+}
+
+.nav-menu. .nav-link.current {
+    color: var(--secondary-color);
 }
 
 .nav-link {
@@ -66,25 +59,14 @@ body {
     
 }
 
-.nav-contacts {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-     
-}
-
 .nav-email,
 .nav-telephone {
-    color: var(--main-color);
-    
+    color: var(--main-color);   
 }
 
-.nav-email:hover,
-.nav-telephone:hover {
-    color: var(--secondary-color)
-}
-  
+/* header */
+
+/* main */
 .hero {
     background-color: #2F303A;
 }
@@ -125,7 +107,8 @@ body {
     color: #757575;
 }
 
-.services-title {
+.services-title,
+.team-title {
     font-size: 36px;
     line-height: 1.17;
     letter-spacing: 0.03em;
@@ -136,12 +119,7 @@ body {
 .team {
     background-color: #F5F4FA;
 }
-.team-title {
-    font-size: 36px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    color: var(--main-color);
-}
+
 
 .team-member {
     font-weight: 500;
@@ -158,7 +136,9 @@ body {
     letter-spacing: 0.03em;
     color: #757575;
 }
+/* main */
 
+/* footer */
 .footer {
     background-color: #2F303A;
 }
@@ -195,7 +175,7 @@ body {
     color: rgba(255, 255, 255, 0.6);
 
 }
-
+/* footer */
 
 /* portfolio html */
 
@@ -231,4 +211,12 @@ body {
     line-height: 1,9;
     letter-spacing: 0.03em;
     color: #757575;
+}
+
+.active-link:active {
+    color: var(--secondary-color);
+}
+
+.nav-link.current {
+    color: #2196f3;
 }
